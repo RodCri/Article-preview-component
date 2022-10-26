@@ -24,7 +24,7 @@ body{
     @media(max-width:870px){
       flex-direction: column;
       width: 300px;
-      height: 510px;
+      height: 500px;
     }
     &__figure{
       width: 286px;
@@ -63,6 +63,9 @@ body{
         color: $desaturated-dark-bBlue;
         line-height: 1.6em;
         margin-bottom: 1rem;
+        @media(max-width:870px){
+          margin-bottom: 2rem;
+        }
       }
       .info__user{
         display: flex;
@@ -105,6 +108,15 @@ body{
             background-color: $very-dark-grayish-blue;
             right: -110px;
             bottom: 55px;
+            @media(max-width:870px){
+              width: 228px;
+              height: 60px;
+              right: 44px;
+              bottom: -24px;
+              border-top-left-radius: 0;
+              border-top-right-radius: 0;
+              border-bottom-right-radius: 0;
+            }
             &::after{
               content: '';
               position: absolute;
@@ -113,6 +125,10 @@ body{
               clip-path: polygon(53% 100%, 0 0, 98% 0);
               background-color: $very-dark-grayish-blue;
               bottom: -12px;
+              @media(max-width:870px){
+                width: 0;
+                height: 0;
+              }
             }
             p{
               letter-spacing: 4px;
@@ -122,6 +138,9 @@ body{
             padding: 6px;
             border: none;
             border-radius: 50%;
+            @media(max-width:870px){
+              position: inherit;
+            }
             &:hover{
               cursor: pointer;
             }

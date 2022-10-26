@@ -28,7 +28,7 @@ body {
   .content .article {
     flex-direction: column;
     width: 300px;
-    height: 510px;
+    height: 500px;
   }
 }
 .content .article__figure {
@@ -78,6 +78,11 @@ body {
   line-height: 1.6em;
   margin-bottom: 1rem;
 }
+@media (max-width: 870px) {
+  .content .article__info .info__description {
+    margin-bottom: 2rem;
+  }
+}
 .content .article__info .info__user {
   display: flex;
   justify-content: space-between;
@@ -120,6 +125,17 @@ body {
   right: -110px;
   bottom: 55px;
 }
+@media (max-width: 870px) {
+  .content .article__info .info__user .user__share .share {
+    width: 228px;
+    height: 60px;
+    right: 44px;
+    bottom: -24px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+}
 .content .article__info .info__user .user__share .share::after {
   content: "";
   position: absolute;
@@ -129,6 +145,12 @@ body {
   background-color: hsl(217deg, 19%, 35%);
   bottom: -12px;
 }
+@media (max-width: 870px) {
+  .content .article__info .info__user .user__share .share::after {
+    width: 0;
+    height: 0;
+  }
+}
 .content .article__info .info__user .user__share .share p {
   letter-spacing: 4px;
 }
@@ -136,6 +158,11 @@ body {
   padding: 6px;
   border: none;
   border-radius: 50%;
+}
+@media (max-width: 870px) {
+  .content .article__info .info__user .user__share .icon-share {
+    position: inherit;
+  }
 }
 .content .article__info .info__user .user__share .icon-share:hover {
   cursor: pointer;
